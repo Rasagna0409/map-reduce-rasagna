@@ -1,5 +1,5 @@
-s = open("s.txt","r")
-r = open("r.txt", "w")
+s = open("sort.txt","r")
+r = open("reduce.txt", "w")
 
 thisKey = ""
 thisValue = 0.0
