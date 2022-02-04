@@ -3,6 +3,6 @@ import sys
 for line in sys.stdin:  
     dataList = line.strip().split(",") 
     
-    if (len(dataList) == 10) :
-        Manufacturer,Model,Price,Transmission,Power,EngineCC,Fuel,Male,Female,Total = dataList 
-        print (Manufacturer,"\t", Total)
+    if (len(dataList) == 8) :
+        BGGId,Name,Description,YearPublished,GameWeight,AvgRating,BayesAvgRating,StdDev= dataList 
+        print (Name,"\t", StdDev)

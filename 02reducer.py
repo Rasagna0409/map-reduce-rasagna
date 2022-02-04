@@ -8,15 +8,15 @@ thisValue = 0
 for line in sys.stdin:
   datalist = line.strip().split('\t')
   if (len(datalist) == 2) : 
-    Manufacturer, Total = datalist
+    Name, StdDev = datalist
 
-    if Manufacturer != thisKey:   # we've moved to another key
+    if Name != thisKey:   # we've moved to another key
       if thisKey:
         # output the previous key-summaryvalue result
         print(thisKey,'\t',thisValue)
 
       # start over for each new key
-      thisKey = Manufacturer 
+      thisKey = Name 
       thisValue = 0
   
     # apply the aggregation function
